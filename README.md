@@ -62,3 +62,10 @@ python binarize_images.py --input 1-Tiling\tiles_output --output masks
 ```
 python infer_model.py --model runs/unet_best.pth --input tiles_output --output masks_pred
 ```
+
+
+## Resultados
+<img width="782" height="346" alt="plantacao1" src="https://github.com/user-attachments/assets/fa55bd84-6012-43a9-a878-4cdff4c9c904" />
+[sobreposicao.tif](https://github.com/user-attachments/files/23455077/sobreposicao.tif)
+[reconstrucao_masks_plantacao2.tif](https://github.com/user-attachments/files/23455089/reconstrucao_masks_plantacao2.tif)
+
