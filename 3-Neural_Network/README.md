@@ -1,10 +1,10 @@
-🌿 Módulo de Rede Neural — Segmentação de Plantações (U-Net)
+# Módulo de Rede Neural — Segmentação de Plantações (U-Net)
 
 Este módulo contém o pipeline de treinamento e inferência de uma U-Net para segmentação de áreas verdes em imagens aéreas ou de drones.
 
 O modelo aprende a prever máscaras binárias a partir de imagens RGB, utilizando dados gerados pelo módulo anterior (tiling e binarization).
 
-📁 Estrutura do módulo
+## Estrutura do módulo
 3-Neural_Network/
 │
 ├── src/
@@ -18,20 +18,20 @@ O modelo aprende a prever máscaras binárias a partir de imagens RGB, utilizand
 ├── masks/                    # (Exemplo) máscaras geradas
 └── runs/                     # Modelos treinados e checkpoints
 
-🧠 Treinamento do modelo
+## Treinamento do modelo
 
 O script train_model.py permite treinar uma U-Net a partir de um diretório de imagens RGB e suas máscaras binárias correspondentes (com sufixo _mask).
 
-📦 Exemplo de uso
+## Exemplo de uso
 python train_model.py \
-  --rgb "C:\path\to\tiles_train" \
-  --groundtruth "C:\path\to\masks_train" \
+  --rgb "path\to\tiles_train" \
+  --groundtruth "path\to\masks_train" \
   --modelpath "runs" \
   --epochs 20 \
   --batch-size 4 \
   --lr 1e-4
 
-🔧 Parâmetros
+## Parâmetros
 Parâmetro	Descrição	Padrão
 --rgb	Caminho para as imagens de entrada	(obrigatório)
 --groundtruth	Caminho para as máscaras correspondentes	(obrigatório)
@@ -40,17 +40,17 @@ Parâmetro	Descrição	Padrão
 --batch-size	Tamanho do batch	4
 --lr	Taxa de aprendizado	1e-4
 
-🔍 Inferência (Predição)
+## Inferência (Predição)
 
 O script infer_model.py aplica o modelo treinado em novas imagens, gerando máscaras preditas.
 
-📦 Exemplo de uso
+## Exemplo de uso
 python infer_model.py \
   --model "runs/unet_best.pth" \
-  --input "C:\path\to\tiles_test" \
-  --output "C:\path\to\predictions"
+  --input "path\to\tiles_test" \
+  --output "path\to\predictions"
 
-🔧 Parâmetros
+## Parâmetros
 Parâmetro	Descrição	Padrão
 --model	Caminho para o modelo .pth treinado	(obrigatório)
 --input	Pasta contendo imagens a segmentar	(obrigatório)

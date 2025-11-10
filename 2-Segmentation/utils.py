@@ -3,9 +3,7 @@ import numpy as np
 import os
 from abc import ABC, abstractmethod
 
-# ==============================
-# 🧩 Interfaces base
-# ==============================
+# Interfaces
 
 class ImageProcessor(ABC):
     """Interface base para processadores de imagem."""
@@ -21,9 +19,7 @@ class MaskGenerator(ABC):
         pass
 
 
-# ==============================
-# 🧮 Implementação GLI
-# ==============================
+# Implementação do calculo de GLI e geração de máscara
 
 class GLICalculator(ImageProcessor):
     """Calcula o índice GLI (Green Leaf Index) a partir de uma imagem RGB."""
@@ -49,9 +45,7 @@ class ThresholdMaskGenerator(MaskGenerator):
         return mask
 
 
-# ==============================
-# ⚙️ Pipeline de execução
-# ==============================
+# Pipeline de execução
 
 class GLIMaskPipeline:
     """Gerencia o fluxo completo de processamento GLI → Máscara."""

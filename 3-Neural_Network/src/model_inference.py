@@ -25,10 +25,10 @@ def infer(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = UNet().to(device)
 
-    print(f"🚀 Rodando inferência em {device}")
-    print(f"📂 Modelo: {args.modelpath}")
-    print(f"📂 Input: {args.rgb}")
-    print(f"💾 Output: {args.output}")
+    print(f"Rodando inferência em {device}")
+    print(f"Modelo: {args.modelpath}")
+    print(f"Input: {args.rgb}")
+    print(f"Output: {args.output}")
 
     model.load_state_dict(torch.load(args.modelpath, map_location=device))
     model.eval()

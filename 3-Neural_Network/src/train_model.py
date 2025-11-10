@@ -22,10 +22,10 @@ def iou_score(pred, target, threshold=0.5):
 def train(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    print(f"🚀 Treinando em: {device}")
-    print(f"📂 Imagens: {args.rgb}")
-    print(f"📂 Máscaras: {args.groundtruth}")
-    print(f"💾 Saída: {args.modelpath}")
+    print(f"Treinando em: {device}")
+    print(f"Imagens: {args.rgb}")
+    print(f"Máscaras: {args.groundtruth}")
+    print(f"Saída: {args.modelpath}")
 
     # Transformações
     train_transform = A.Compose([

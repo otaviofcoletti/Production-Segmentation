@@ -1,4 +1,4 @@
-# 🛰️ OrthoMosaic Tools — Tiling, Reconstrução e Divisão Treino/Teste
+# OrthoMosaic Tools — Tiling, Reconstrução e Divisão Treino/Teste
 
 Este módulo fornece utilitários em Python para manipulação de **imagens GeoTIFF** de grandes dimensões, permitindo:
 - Gerar *tiles* (recortes) para processamento por modelos de deep learning;
@@ -7,9 +7,9 @@ Este módulo fornece utilitários em Python para manipulação de **imagens GeoT
 
 ---
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
-📦 Production-Segmentation
+Production-Segmentation
 └── 1-Tiling/
 ├── data/ Onde estão as imagens para segmentar
 ├── orthomosaic.py executar o tiling e divisão
