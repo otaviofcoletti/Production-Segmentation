@@ -40,7 +40,25 @@ python binarize_images.py --input 1-Tiling\tiles_output\tiles_train --output mas
 python train_model.py --rgb 1-Tiling\tiles_output\tiles_train --groundtruth masks_train
 ```
 
-Executar inferência
+#### Executar inferência
 ```
 python infer_model.py --model runs/unet_best.pth --input tiles_test --output masks_pred
+```
+
+### Pipeline de inferência
+
+```
+cd 1-Tiling
+python orthomosaic.py --input data\plantacao0.tif --output tiles_output 
+```
+
+#### Gerar máscaras GLI
+```
+cd 2-Segmentation
+python binarize_images.py --input 1-Tiling\tiles_output --output masks
+```
+
+#### Executar inferência
+```
+python infer_model.py --model runs/unet_best.pth --input tiles_output --output masks_pred
 ```
