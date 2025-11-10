@@ -1,5 +1,6 @@
-1-Tiling/output_dataset/
-2-Segmentation/masks_train/
-3-Neural_Network/images/
-3-Neural_Network/masks/
+1-Tiling\tiles_output
+2-Segmentation\masks_train\
+3-Neural_Network\images\
+3-Neural_Network\masks\
 venv\
+__pycache__\
