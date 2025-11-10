@@ -66,6 +66,7 @@ python infer_model.py --model runs/unet_best.pth --input tiles_output --output m
 
 ## Resultados
 <img width="782" height="346" alt="plantacao1" src="https://github.com/user-attachments/assets/fa55bd84-6012-43a9-a878-4cdff4c9c904" />
-[sobreposicao.tif](https://github.com/user-attachments/files/23455077/sobreposicao.tif)
-[reconstrucao_masks_plantacao2.tif](https://github.com/user-attachments/files/23455089/reconstrucao_masks_plantacao2.tif)
+<img width="2304" height="1280" alt="reconstrucao_masks_plantacao1" src="https://github.com/user-attachments/assets/c8d1588e-efb7-4d77-9e92-fb7238a9e534" />
+<img width="2315" height="1492" alt="sobreposicao0" src="https://github.com/user-attachments/assets/6eaa5018-c08b-4264-be32-793312f6894b" />
+
 
