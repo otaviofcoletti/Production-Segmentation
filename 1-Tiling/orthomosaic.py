@@ -2,9 +2,6 @@ import argparse
 import os
 from utils import crop_geotiff, dividir_treino_teste_geotiff
 
-# ============================================================
-# 🎯 Função principal da CLI
-# ============================================================
 
 def main():
     parser = argparse.ArgumentParser(
@@ -54,9 +51,6 @@ def main():
 
     args = parser.parse_args()
 
-    # ========================================================
-    # 🧭 Caminhos e inicialização
-    # ========================================================
 
     input_path = args.input
     output_dir = args.output
@@ -68,10 +62,6 @@ def main():
         raise FileNotFoundError(f"Arquivo de entrada não encontrado: {input_path}")
 
     os.makedirs(output_dir, exist_ok=True)
-
-    # ========================================================
-    # 🔄 Lógica principal
-    # ========================================================
 
     if train_mode:
         # Faz a divisão entre treino e teste
@@ -98,9 +88,6 @@ def main():
         print(f"✅ Tiles salvos em: {output_dir}")
 
 
-# ============================================================
-# 🚀 Execução direta
-# ============================================================
 
 if __name__ == "__main__":
     main()

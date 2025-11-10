@@ -13,7 +13,7 @@ from rasterio.errors import NotGeoreferencedWarning
 warnings.filterwarnings("ignore", category=NotGeoreferencedWarning)
 
 # ============================================================
-# Utils
+# Tiling utils
 # ============================================================
 
 def ensure_georeference(src):
@@ -43,7 +43,7 @@ def list_tif_files(directory):
 
 
 # ============================================================
-# ✂️ 1. Crop de GeoTIFF em Tiles, params opcionais: 
+# 1. Crop de GeoTIFF em Tiles, params opcionais: 
 # overlap e size_tile
 # Comentários
 # Foi feito um tratamento para arquivos sem georreferência serem processados também pois a biblioteca rasterio
@@ -93,9 +93,6 @@ def crop_geotiff(input_tif, output_dir, tile_size=1024, overlap=0.2):
     print(f"✅ {count} tiles gerados em {output_dir}")
 
 
-# ============================================================
-# 🔄 2. FUNÇÃO: RECONSTRUIR MOSAICO A PARTIR DOS TILES
-# ============================================================
 
 def reconstruir_tif_segmentado(tiles_dir, output_path):
     """
@@ -137,10 +134,6 @@ def reconstruir_tif_segmentado(tiles_dir, output_path):
 
     print(f"✅ Mosaico reconstruído salvo em: {output_path}")
 
-
-# ============================================================
-# 🔀 3. FUNÇÃO: DIVIDIR GEOTIFF EM TREINO E TESTE
-# ============================================================
 
 def dividir_treino_teste_geotiff(input_tif, output_train, output_test, eixo="vertical"):
     """
