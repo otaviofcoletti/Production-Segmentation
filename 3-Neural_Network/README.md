@@ -20,7 +20,7 @@ O modelo aprende a prever máscaras binárias a partir de imagens RGB, utilizand
 
 ## Treinamento do modelo
 
-O script train_model.py permite treinar uma U-Net a partir de um diretório de imagens RGB e suas máscaras binárias correspondentes (com sufixo _mask).
+O script train_model.py permite treinar uma U-Net a partir de um diretório de imagens RGB e suas máscaras binárias correspondentes.
 
 ## Exemplo de uso
 python train_model.py \
@@ -40,7 +40,7 @@ Parâmetro	Descrição	Padrão
 --batch-size	Tamanho do batch	4
 --lr	Taxa de aprendizado	1e-4
 
-## Inferência (Predição)
+## Inferência
 
 O script infer_model.py aplica o modelo treinado em novas imagens, gerando máscaras preditas.
 
