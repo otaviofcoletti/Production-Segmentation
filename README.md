@@ -62,3 +62,35 @@ python binarize_images.py --input 1-Tiling\tiles_output --output masks
 ```
 python infer_model.py --model runs/unet_best.pth --input tiles_output --output masks_pred
 ```
+
+### Resultados com a metade da imagem que não foi treinada
+
+#### Metade da imagem não treinada
+
+<img width="3786" height="3849" alt="plantacao_teste (1)" src="https://github.com/user-attachments/assets/a7527d9a-2231-4aad-bf11-9c9c31bcfab0" />
+
+#### Máscara gerada pela rede neural
+
+<img width="3584" height="3840" alt="reconstrucao_masks_teste" src="https://github.com/user-attachments/assets/3b949d7e-274e-45df-b7c4-a59efd4b64a7" />
+
+#### Sobreposição da máscara na imagem original
+
+<img width="3786" height="3849" alt="sobreposicao0 (1) (1)" src="https://github.com/user-attachments/assets/084a914c-13ad-49c8-bbea-c68488fc938e" />
+
+### Resultados com imagem diferente
+
+#### Imagem de input
+
+<img width="2315" height="1492" alt="plantacao2" src="https://github.com/user-attachments/assets/7fa6c5ca-3bf4-4055-ad77-2b5a88d0ecb0" />
+
+
+<img width="2304" height="1280" alt="reconstrucao_masks_plantacao1" src="https://github.com/user-attachments/assets/c8d1588e-efb7-4d77-9e92-fb7238a9e534" />
+
+#### Sobreposição da máscara na imagem original
+
+<img width="2315" height="1492" alt="sobreposicao0" src="https://github.com/user-attachments/assets/6eaa5018-c08b-4264-be32-793312f6894b" />
+
+
+
+
+
