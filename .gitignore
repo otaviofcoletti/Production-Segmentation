@@ -1,8 +1,8 @@
-1-Tiling\tiles_output\
-1-Tiling\tiles_output\tiles_test\
-1-Tiling\tiles_output\tiles_train\
-2-Segmentation\masks_train\
-3-Neural_Network\images\
-3-Neural_Network\masks\
-venv\
-__pycache__\
+1-Tiling/tiles_output/
+1-Tiling/tiles_output/tiles_test/
+1-Tiling/tiles_output/tiles_train/
+2-Segmentation/masks_train/
+3-Neural_Network/images/
+3-Neural_Network/masks/
+venv/
+__pycache__/
