@@ -64,9 +64,15 @@ python infer_model.py --model runs/unet_best.pth --input tiles_output --output m
 ```
 
 
-## Resultados
-<img width="782" height="346" alt="plantacao1" src="https://github.com/user-attachments/assets/fa55bd84-6012-43a9-a878-4cdff4c9c904" />
+### Resultados
+#### Imagem de input
+<img width="2315" height="1492" alt="plantacao2" src="https://github.com/user-attachments/assets/7fa6c5ca-3bf4-4055-ad77-2b5a88d0ecb0" />
+#### Máscara gerada pela rede neural
 <img width="2304" height="1280" alt="reconstrucao_masks_plantacao1" src="https://github.com/user-attachments/assets/c8d1588e-efb7-4d77-9e92-fb7238a9e534" />
+#### Sobreposição da máscara na imagem original
 <img width="2315" height="1492" alt="sobreposicao0" src="https://github.com/user-attachments/assets/6eaa5018-c08b-4264-be32-793312f6894b" />
+
+
+
 
 
